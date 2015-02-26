@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=node
-PKG_VERSION:=v0.10.17
+PKG_VERSION:=v0.11.16
 PKG_RELEASE:=2
 
 PKG_SOURCE:=node-$(PKG_VERSION).tar.gz
@@ -18,7 +18,7 @@ GIT_SOURCE:=https://github.com/brimstone/v8m-rb
 #GIT_SOURCE:=/tmp/v8m-rb
 
 GYP_DEFINES:=v8_use_mips_abi_hardfloat=false v8_can_use_fpu_instructions=false
-LIBS:=-I$(TOOLCHAIN_DIR)/mips-openwrt-linux-uclibc/include/c++/4.6.3/ -I$(TOOLCHAIN_DIR)/mips-openwrt-linux-uclibc/include/c++/4.6.3/mips-openwrt-linux-uclibc/
+LIBS:=-I$(TOOLCHAIN_DIR)/openwrt-linux-uclibc/include/c++/4.6.3/ -I$(TOOLCHAIN_DIR)/openwrt-linux-uclibc/include/c++/4.6.3/openwrt-linux-uclibc/
 
 include $(INCLUDE_DIR)/package.mk
 
